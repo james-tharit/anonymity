@@ -1,0 +1,52 @@
+.background {
+    padding: 10px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: black;
+}
+
+.article {
+    width: 100%;
+    text-align: start;
+    overflow: hidden;
+    /* top | right | bottom | left */
+    padding: 20px 0 20px 0
+}
+
+.type1 {
+    background-color: #0D9472;
+}
+
+.type1 h1 {
+    color: white;
+}
+
+.subType1 {
+    background-color: #D5EFE8;
+    font-size: 100%;
+    overflow: hidden;
+}
+
+.type2 {
+    background-color: #312F32;
+}
+
+.type2 h1 {
+    color: white;
+}
+
+.subType2 {
+    background-color: #7B777B;
+    font-size: 100%;
+    overflow: hidden;
+}
+
+.type2 p {
+    color: white
+}
+
+.type3 {
+    border-style: groove;
+    border-width: 2px;
+    border-color: black;
+}

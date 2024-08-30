@@ -1,0 +1,26 @@
+body {
+    padding: 20px 20px 60px;
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: xxx-large;
+    /* top | right | bottom | left */
+    margin: 0 0 0 0;
+}
+
+h2 {
+    font-weight: 100;
+    font-size: xx-large;
+    /* top | right | bottom | left */
+    margin: 0 0 0 0;
+}
+
+p {
+    font-weight: 100;
+    font-size: x-large;
+    /* top | right | bottom | left */
+    margin: 0 0 0 0;
+}
