@@ -1,3 +1,4 @@
+import Link from "next/link"
 import styles from "./article.module.css"
 import Image from 'next/image'
 
@@ -9,7 +10,7 @@ type AricleParam = {
     link?: string
 }
 
-export const Article = ({ title, caption, type, id }: AricleParam) => {
+export const Article = ({ title, caption, type, id, link = "" }: AricleParam) => {
 
     let types = {
         type: styles.type1,
@@ -45,7 +46,7 @@ export const Article = ({ title, caption, type, id }: AricleParam) => {
                 <div className={types.subType}>
                     <h2>{caption}</h2>
                 </div>
-                <button className={styles.button}>
+                <Link href={link} className={styles.button}>
                     <Image
                         style={{ marginRight: 2 }}
                         src="/link.svg"
@@ -53,7 +54,17 @@ export const Article = ({ title, caption, type, id }: AricleParam) => {
                         height={16}
                         alt="Picture of the author"
                     />
-                    share
+                    source
+                </Link>
+                <button style={{ fontWeight: 'bold' }} className={styles.button}>
+                    <Image
+                        style={{ marginRight: 2 }}
+                        src="/flame.svg"
+                        width={16}
+                        height={16}
+                        alt="Picture of the author"
+                    />
+                    โคตรเหลือเชื่อ!
                 </button>
             </div>
         </div >

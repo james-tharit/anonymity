@@ -5,6 +5,11 @@
     border-color: black;
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
 .body {
     width: 100%;
     text-align: start;
