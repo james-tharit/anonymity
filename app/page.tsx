@@ -1,12 +1,19 @@
-import React from "react"
+'use client'
+import React, { useState } from "react"
 import styles from "./page.module.css"
 import { Article } from "../components/article"
-import { randomUUID } from "crypto"
+import { Modal } from "../components/modal";
 
 export default function Page() {
+    const [showModal, setShowModal] = useState(false);
+
     return <div className={styles.background}>
         <h1>แบบนี้ก็ได้หรอ!</h1>
         <p>รวมเรื่องเหลือจะเชื่อในสังคมไทย อะไรก็ได้</p>
+        <button onClick={() => setShowModal(true)}>Open Modal</button>
+        {showModal &&
+            <Modal onClose={() => setShowModal(false)} />
+        }
         <div className={styles.body}>
             <Article
                 id="id-1"
