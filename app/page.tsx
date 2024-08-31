@@ -10,14 +10,12 @@ export default function Page() {
     return <div className={styles.background}>
         <h1>แบบนี้ก็ได้หรอ!</h1>
         <p>รวมเรื่องเหลือจะเชื่อในสังคมไทย อะไรก็ได้</p>
-        <button onClick={() => setShowModal(true)}>Open Modal</button>
-        {showModal &&
-            <Modal onClose={() => setShowModal(false)} />
-        }
+        <button onClick={() => setShowModal(true)}>เพิ่มเรื่องใหม่</button>
+        <Modal style={{ display: showModal ? "block" : "none" }} onClose={() => setShowModal(false)} />
         <div className={styles.body}>
             <Article
                 id="id-1"
-                title="น้องออนิว ขโมยลูกวัวป้า แลกรหัสเปส"
+                title="น้องออนิวขโมยลูกวัวป้า แลกรหัสเปส"
                 caption="ลั่น ส่งไม่เป็น ขอนัดรับวันเสาร์เพราะป้าไม่อยู่บ้าน"
                 type={1}
             />

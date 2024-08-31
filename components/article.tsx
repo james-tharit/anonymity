@@ -56,7 +56,6 @@ export const Article = ({ title, caption, type, id }: AricleParam) => {
                     share
                 </button>
             </div>
-
         </div >
     )
 }

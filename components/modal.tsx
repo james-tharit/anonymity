@@ -2,39 +2,34 @@
 import styles from "./modal.module.css"
 import Link from "next/link";
 
-export const Modal = ({ onClose }) => {
+export const Modal = ({ onClose, style }) => {
 
     const handleCloseClick = () => {
         onClose();
     };
 
     return (
-        <div className={styles.modal}>
+        <div style={style} className={styles.modal}>
             <div className={styles.modalContent}>
                 <div className={styles.modalHeader}>
-                    <button onClick={onClose} className={styles.button}>
+                    <button onClick={handleCloseClick} className={styles.button}>
                         Close
                     </button>
                 </div>
                 <div className={styles.modalBody}>
-                    <p>แชร์พาดหัวข่าวนี้ลง</p>
+                    <p>สร้างพาดหัวข่าว</p>
                     <div style={{ display: 'flex', justifyContent: 'center' }}>
-                        {/* <div className={types.type} style={{ maxWidth: "680px" }}>
-                            <h1>{title}</h1>
-                            <div className={types.subType}>
-                                <h2>{caption}</h2>
-                            </div>
-                        </div> */}
+
                     </div>
-                    <Link href="/" className={styles.twitterButton}>
+                    {/* <Link href="/" className={styles.twitterButton}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                             <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
                         </svg>
                         <p>Share</p>
-                    </Link>
+                    </Link> */}
                 </div>
                 <div className={styles.modalFooter}>
-                    <h3>Modal Footer</h3>
+                    <p>สร้างพาดหัวข่าว</p>
                 </div>
             </div>
         </div>
