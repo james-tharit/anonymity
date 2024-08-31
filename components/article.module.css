@@ -36,7 +36,7 @@
     overflow: hidden;
 }
 
-.type2 p {
+.type2 h2 {
     padding: 0 4px 0 4px;
     color: white
 }
@@ -72,6 +72,8 @@
 }
 
 .button {
+    color: black;
+    text-decoration: none;
     background-color: white;
     display: inline-block;
     margin: 2px;
