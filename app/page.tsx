@@ -4,8 +4,8 @@ import { Article } from "../components/article"
 
 export default function Page() {
     return <div className={styles.background}>
-        <h1>The Sarcasm News</h1>
-        <p>Because the news is already a joke, why not make it funnier?</p>
+        <h1>แบบนี้ก็ได้หรอ!</h1>
+        <p>รวมเรื่องเหลือจะเชื่อในสังคมไทย อะไรก็ได้</p>
         <div className={styles.article}>
             <Article
                 title="น้องออนิว ขโมยลูกวัวป้า แลกรหัสเปส"
@@ -13,7 +13,7 @@ export default function Page() {
                 type={1}
             />
             <Article
-                title='นางแบกเพื่อไทย เลือกผลประโยชน์ของตัวเอง เหนือการรักษาสัจจะวาจา ช่าวเน็ตลั่น "จะไปสุดที่ตรงไหน"'
+                title='นางแบกเพื่อไทย ตระบัดสัตย์ ไม่แคร์ เลือกผลประโยชน์  ช่าวเน็ตลั่น "จะไปสุดที่ตรงไหน"'
                 caption="พรรคประชาธิปัตย์มีมติเอกฉันท์ 34 เสียง เข้าร่วมรัฐบาลเพื่อไทย"
                 type={2}
             />
