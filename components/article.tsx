@@ -1,5 +1,9 @@
+'use client'
 import styles from "./article.module.css"
+import modalStyles from "./modal.module.css"
 import Image from 'next/image'
+import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 
 type AricleParam = {
     title: string
@@ -9,6 +13,8 @@ type AricleParam = {
 }
 
 export const Article = ({ title, caption, type }: AricleParam) => {
+    const searchParams = useSearchParams()
+    const share = searchParams.get('share')
 
     let types = {
         type: styles.type1,
@@ -54,7 +60,7 @@ export const Article = ({ title, caption, type }: AricleParam) => {
                     />
                     23
                 </button>
-                <button className={styles.button}>
+                <Link href="/?share=true" className={styles.button}>
                     <Image
                         style={{ marginRight: 2 }}
                         src="/link.png"
@@ -62,9 +68,28 @@ export const Article = ({ title, caption, type }: AricleParam) => {
                         height={16}
                         alt="Picture of the author"
                     />
-                    ref
-                </button>
+                    share
+                </Link>
             </div>
-        </div>
+
+            <div id="myModal" style={{ display: share && "block" }} className={modalStyles.modal}>
+                <div className={modalStyles.modalContent}>
+                    <div className={modalStyles.modalHeader}>
+                        <Link href="/">
+                            Close
+                        </Link>
+                    </div>
+                    <div className={modalStyles.modalBody}>
+                        <p>Some text in the Modal Body</p>
+                        <p>Some other text...</p>
+                    </div>
+                    <div className={modalStyles.modalFooter}>
+                        <h3>Modal Footer</h3>
+                    </div>
+                </div>
+
+            </div>
+
+        </div >
     )
 }
