@@ -46,7 +46,29 @@
 }
 
 .type3 {
-    border-style: groove;
-    border-width: 2px;
-    border-color: black;
+    background-color: #038DDA;
+}
+
+.type3 h1 {
+    color: white;
+}
+
+.subType3 {
+    background-color: white;
+    font-size: 100%;
+    overflow: hidden;
+}
+
+.type4 {
+    background-color: #b63096;
+}
+
+.type4 h1 {
+    color: white;
+}
+
+.subType4 {
+    background-color: white;
+    font-size: 100%;
+    overflow: hidden;
 }

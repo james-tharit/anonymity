@@ -1,0 +1,14 @@
+.background {
+    padding: 10px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: black;
+}
+
+.article {
+    width: 100%;
+    text-align: start;
+    overflow: hidden;
+    /* top | right | bottom | left */
+    padding: 20px 0 20px 0
+}
