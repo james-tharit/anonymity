@@ -6,7 +6,7 @@ export default function Page() {
     return <div className={styles.background}>
         <h1>แบบนี้ก็ได้หรอ!</h1>
         <p>รวมเรื่องเหลือจะเชื่อในสังคมไทย อะไรก็ได้</p>
-        <div className={styles.article}>
+        <div className={styles.body}>
             <Article
                 title="น้องออนิว ขโมยลูกวัวป้า แลกรหัสเปส"
                 caption="ลั่น ส่งไม่เป็น ขอนัดรับวันเสาร์เพราะป้าไม่อยู่บ้าน"
@@ -28,5 +28,6 @@ export default function Page() {
                 type={4}
             />
         </div>
+        <a href="https://www.flaticon.com/free-icons/durable" title="durable icons">Durable icons created by Freepik - Flaticon</a>
     </div>
 }

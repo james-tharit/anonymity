@@ -1,16 +1,9 @@
-.background {
-    padding: 10px;
-    border-style: solid;
-    border-width: 4px;
-    border-color: black;
-}
-
 .article {
     width: 100%;
     text-align: start;
     overflow: hidden;
     /* top | right | bottom | left */
-    padding: 20px 0 20px 0
+    padding: 8px 0 0 0
 }
 
 .type1 {
@@ -71,4 +64,16 @@
     background-color: white;
     font-size: 100%;
     overflow: hidden;
+}
+
+.button {
+    display: inline-block;
+    margin: 2px;
+    padding: 2px 8px;
+    border: 2px solid black;
+    border-width: 1px 3px 3px 1px;
+    border-radius: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
 }

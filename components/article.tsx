@@ -1,9 +1,11 @@
 import styles from "./article.module.css"
+import Image from 'next/image'
 
 type AricleParam = {
     title: string
     caption: string
     type: number
+    link?: string
 }
 
 export const Article = ({ title, caption, type }: AricleParam) => {
@@ -36,10 +38,32 @@ export const Article = ({ title, caption, type }: AricleParam) => {
     }
 
     return (
-        <div className={types.type}>
-            <h1>{title}</h1>
-            <div className={types.subType}>
-                <p>{caption}</p>
+        <div className={styles.article}>
+            <div className={types.type}>
+                <h1>{title}</h1>
+                <div className={types.subType}>
+                    <p>{caption}</p>
+                </div>
+                <button className={styles.button}>
+                    <Image
+                        style={{ marginRight: 2 }}
+                        src="/heart.png"
+                        width={16}
+                        height={16}
+                        alt="Picture of the author"
+                    />
+                    23
+                </button>
+                <button className={styles.button}>
+                    <Image
+                        style={{ marginRight: 2 }}
+                        src="/link.png"
+                        width={16}
+                        height={16}
+                        alt="Picture of the author"
+                    />
+                    ref
+                </button>
             </div>
         </div>
     )
