@@ -6,7 +6,7 @@ type AricleParam = {
     id: string
     title: string
     caption: string
-    type: number
+    type: string
     link?: string
 }
 
@@ -18,21 +18,21 @@ export const Article = ({ title, caption, type, id, link = "" }: AricleParam) =>
     }
 
     switch (type) {
-        case 1:
+        case "GreenViper":
             break;
-        case 2:
+        case "DimGray":
             types = {
                 type: styles.type2,
                 subType: styles.subType2
             }
             break;
-        case 3:
+        case "DodgerBlue":
             types = {
                 type: styles.type3,
                 subType: styles.subType3
             }
             break;
-        case 4:
+        case "MediumVioletRed":
             types = {
                 type: styles.type4,
                 subType: styles.subType4
