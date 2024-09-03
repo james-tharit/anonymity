@@ -17,7 +17,7 @@ export const Modal = ({ onClose, style }) => {
                     </button>
                 </div>
                 <div className={styles.modalBody}>
-                    <p>สร้างพาดหัวข่าว</p>
+                    <p>เรื่องราวของคุณมีค่า มาแชร์ให้คนอื่นได้เรียนรู้</p>
                     <div style={{ display: 'flex', justifyContent: 'center' }}>
 
                     </div>
@@ -29,7 +29,7 @@ export const Modal = ({ onClose, style }) => {
                     </Link> */}
                 </div>
                 <div className={styles.modalFooter}>
-                    <p>สร้างพาดหัวข่าว</p>
+                    <p>ไม่มีการเก็บข้อมูลส่วนตัวใดๆในเว็บไซต์นี้</p>
                 </div>
             </div>
         </div>

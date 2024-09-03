@@ -23,25 +23,24 @@ export default function Page() {
     return <div className={styles.background}>
         <div className={styles.header}>
             <div>
-                <h1>แบบนี้ก็ได้หรอ!</h1>
-                <p>รวมเรื่องเหลือจะเชื่อในสังคมไทย อะไรก็ได้</p>
+                <h1>Anonymity</h1>
+                <p>ไม่มีประสบการณ์ไหนที่ไม่มีค่า มาแชร์ประสบการณ์ในอดีตกันเถอะ!</p>
             </div>
             <form onSubmit={onSubmit}>
-                <input placeholder="ค้นหาเรื่องราวอันน่าเหลือเชื่อ!" type="text" name="search" />
-                <button type="submit">ค้นหาจ้า</button>
+                <input placeholder="ค้นหาประวัติศาสตร์ที่มีคุณค่า" type="text" name="search" />
+                <button type="submit">ค้นหา</button>
             </form>
         </div>
-        <button onClick={() => setShowModal(true)}>เพิ่มเรื่องใหม่</button>
+        <button onClick={() => setShowModal(true)}>เพิ่มเรื่องราวของคุณ</button>
         <Modal style={{ display: showModal ? "block" : "none" }} onClose={() => setShowModal(false)} />
         <div className={styles.body}>
-            {articles.map(({ id, title, caption, type, link }) =>
+            {articles.map(({ id, title, body, articleType }) =>
                 <Article
                     key={id}
                     id={id}
                     title={title}
-                    caption={caption}
-                    type={type}
-                    link={link}
+                    caption={body}
+                    type={articleType}
                 />
             )}
         </div>
