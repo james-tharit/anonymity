@@ -1,13 +1,3 @@
-# แบบนี้ก็ได้หรอ! - newspaper
-รวมเรื่องเหลือจะเชื่อในสังคมไทย อะไรก็ได้
-
-เว็บรวบรวมเรื่องเหลือเชื่อในสังคมไทย
-- user สามารถเอาเรื่องใหม่ๆ มาเพิ่มในเว็บได้
-- user สามารถvoteเห็นด้วยกับความน่าเหลือเชื่อเพื่อดันให้หัวข้อขึ้นไปโชว์ด้านบนได้
-- user สามารถsearchหาเรื่องน่าเหลือเชื่อจากtagต่างๆได้
-
-# ข้อมูลจำเป็นสำหรับเพิ่ม Article ใหม่
-    title: text
-    caption: text
-    reference-link: url
-    date: วันที่ของข้อมูล
+# Anonymity Project
+- แชร์ประสบการณ์ในอดีตให้คนรุ่นใหม่ได้เรียนรู้
+- share you personal failured experieces and the valuable lessons learned to others
